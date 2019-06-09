@@ -1401,3 +1401,20 @@ li.single-social-link a:hover {
   height: 100%;
   width: 100%;
 }
+
+/* ----- 404 PAGE ----- */
+.page-404 {
+  text-align: center;
+}
+.page-404 h1 {
+  font-size: 5em;
+}
+.page-404 p {
+  font-size: 1.2em;
+  color: white;
+}
+.page-404 p a {
+  color: #ffc107;
+  font-weight: 700;
+}
+/* ----- 404 PAGE ENDS ----- */

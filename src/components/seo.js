@@ -18,6 +18,9 @@ function SEO({ description, lang, meta, keywords, title }) {
           siteMetadata {
             title
             description
+            author
+            image
+            themeColor
           }
         }
       }
@@ -51,20 +54,32 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.image,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
-        // {
-        //   name: `twitter:creator`,
-        //   content: site.siteMetadata.author,
-        // },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.author,
+        },
         {
           name: `twitter:title`,
           content: title,
         },
         {
+          name: `twitter:image`,
+          content: site.siteMetadata.image,
+        },
+        {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `theme-color`,
+          content: site.siteMetadata.themeColor,
         },
       ]
         .concat(

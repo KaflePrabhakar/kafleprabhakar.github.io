@@ -42,7 +42,10 @@ module.exports = {
       },
     ],
     description: `This is a personal portfolio website of Prabhakar Kafle.`,
-    image: `/images/logo.png`,
+    author: `@Prabhakar`,
+    image: `/images/og image.jpg`,
+    logo: `/images/logo.png`,
+    themeColor: "#333b50",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -61,8 +64,8 @@ module.exports = {
         name: `Prabhakar Kafle`,
         short_name: `Prabhakar`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#404041`,
+        background_color: `#333b50`,
+        theme_color: `#333b50`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
