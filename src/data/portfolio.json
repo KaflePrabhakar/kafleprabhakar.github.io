@@ -1,0 +1,54 @@
+[
+  {
+    "src": "nes_logo.jpg",
+    "tags": ["NES", "Logo Design", "Graphics Design"],
+    "size": 2,
+    "caption": "Nepal Entrepreneurs Society Logo"
+  },
+  {
+    "src": "oya_logo.png",
+    "tags": ["Oya", "Logo Design"],
+    "size": 2,
+    "caption": "Oya Inc Logo"
+  },
+  {
+    "src": "hamrolagi.jpg",
+    "tags": ["HamroLagi", "Founder", "Web Design"],
+    "size": 6,
+    "caption": "HamroLagi Website",
+    "link": "hamrolagi.com"
+  },
+  {
+    "src": "nes.jpg",
+    "tags": ["NES", "Web Design"],
+    "size": 4,
+    "caption": "Nepal Entrepreneurs Society Website",
+    "link": "nepalentrepreneurs.org"
+  },
+  {
+    "src": "olympiad_logo.jpg",
+    "tags": ["Physics Olympiad", "Logo Design"],
+    "size": 2,
+    "caption": "E=mc<sup>2</sup> Physics Olympiad Logo"
+  },
+  {
+    "src": "oyaschool.jpg",
+    "tags": ["Oya", "Web Design"],
+    "size": 4,
+    "caption": "Oya School Website",
+    "link": "oyaschool.com"
+  },
+  {
+    "src": "oyaop.jpg",
+    "tags": ["Oya", "Web Design"],
+    "size": 4,
+    "caption": "Oya Opportunities Website",
+    "link": "oyaop.com"
+  },
+  {
+    "src": "root_logo.jpg",
+    "tags": ["Root Nepal", "Logo Design"],
+    "size": 2,
+    "caption": "Root Nepal Logo"
+  }
+]
