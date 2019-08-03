@@ -52,7 +52,7 @@ class MasonryGrid extends React.Component {
       key: -1,
       modalIsOpen: false,
       modalImg: "",
-      modalZoom: 1,
+      modalZoom: 1.0,
       zooming: false,
     }
 
@@ -107,6 +107,7 @@ class MasonryGrid extends React.Component {
 
   componentDidMount() {
     this.setState({ tags: b.slice(0, 6) })
+    Modal.setAppElement("body")
   }
 
   render = () => {
@@ -241,7 +242,7 @@ class MasonryGrid extends React.Component {
                     min={1}
                     max={2}
                     step={0.05}
-                    value={this.state.modalZoom}
+                    value={+this.state.modalZoom}
                     railStyle={{
                       backgroundColor: "rgba(255,255,255,0.5)",
                       height: "5px",

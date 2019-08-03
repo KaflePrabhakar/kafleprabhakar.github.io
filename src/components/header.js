@@ -19,7 +19,7 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header id="site-header" style="80px">
+      <header id="site-header">
         <div className="header-container">
           <div className="site-logo">
             <Link to="/">
