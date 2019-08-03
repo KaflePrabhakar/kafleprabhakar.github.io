@@ -3,21 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import Border from "../components/measure"
 import SEO from "../components/seo"
-import { MasonryGrid, MasonryItem } from "../components/gallery"
+import { MasonryGrid } from "../components/gallery"
 
 const PortfolioPage = ({ data }) => {
   let imgData = data.allPortfolioJson.edges
   let images = data.allImageSharp.edges
 
-  const childElements = imgData.map(function(element, key) {
-    var currentImage = images.find(function(img) {
-      return img.node.fluid.originalName === "portfolio_" + element.node.src
-    })
-    if (!currentImage) return null
-    return (
-      <MasonryItem attr={element} image={currentImage.node.fluid} key={key} />
-    )
-  })
   return (
     <Layout isCustom="">
       <SEO
@@ -41,7 +32,7 @@ const PortfolioPage = ({ data }) => {
           <Border stretch={true} />
         </h2>
         <div className="section-content">
-          <MasonryGrid>{childElements}</MasonryGrid>
+          <MasonryGrid imgData={imgData} images={images} type="portfolio" />
         </div>
       </section>
     </Layout>

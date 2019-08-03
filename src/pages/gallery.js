@@ -3,21 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Border from "../components/measure"
-import { MasonryGrid, MasonryItem } from "../components/gallery"
+import { MasonryGrid } from "../components/gallery"
 
 const GalleryPage = ({ data }) => {
   let imgData = data.allGalleryJson.edges
   let images = data.allImageSharp.edges
 
-  const childElements = imgData.map(function(element, key) {
-    var currentImage = images.find(function(img) {
-      return img.node.fluid.originalName === "gallery_" + element.node.src
-    })
-    if (!currentImage) return null
-    return (
-      <MasonryItem attr={element} image={currentImage.node.fluid} key={key} />
-    )
-  })
   return (
     <Layout isCustom="">
       <SEO
@@ -38,7 +29,7 @@ const GalleryPage = ({ data }) => {
           <Border stretch={true} />
         </h2>
         <div className="section-content">
-          <MasonryGrid>{childElements}</MasonryGrid>
+          <MasonryGrid imgData={imgData} images={images} type="gallery" />
         </div>
       </section>
     </Layout>
@@ -63,7 +54,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          fluid(maxWidth: 700) {
+          fluid(maxWidth: 1400, quality: 100) {
             ...GatsbyImageSharpFluid
             originalName
           }

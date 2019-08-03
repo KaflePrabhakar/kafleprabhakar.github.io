@@ -13,7 +13,7 @@ const customStyles = {
 }
 
 // Make sure to bind modal to your appElement (http://reactcommunity.org/react-modal/accessibility/)
-Modal.setAppElement("#yourAppElement")
+// Modal.setAppElement(".item-image")
 
 class ImageModal extends React.Component {
   constructor() {

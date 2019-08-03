@@ -1,8 +1,18 @@
 [
   {
     "src": "1.jpg",
-    "tags": ["photo", "ID"],
+    "tags": ["ID"],
     "size": 2
+  },
+  {
+    "src": "17.jpg",
+    "tags": ["Dashain", "family"],
+    "size": 2
+  },
+  {
+    "src": "5.jpg",
+    "tags": ["Trekking", "Ghandruk"],
+    "size": 6
   },
   {
     "src": "2.jpg",
@@ -10,38 +20,28 @@
     "size": 4
   },
   {
-    "src": "3.jpg",
-    "tags": ["hiking", "pilot baba"],
-    "size": 4
-  },
-  {
-    "src": "4.jpg",
-    "tags": ["hiking", "pilot baba"],
-    "size": 2
-  },
-  {
-    "src": "5.jpg",
-    "tags": ["trekking", "Ghandruk"],
-    "size": 6
-  },
-  {
-    "src": "7.jpg",
-    "tags": ["IPhO", "Physics"],
-    "size": 2
-  },
-  {
-    "src": "15.jpg",
-    "tags": ["Swayambhu"],
-    "size": 2
-  },
-  {
     "src": "6.jpg",
     "tags": ["travel", "Dolalghat"],
     "size": 4
   },
   {
+    "src": "4.jpg",
+    "tags": ["Hiking", "pilot baba"],
+    "size": 2
+  },
+  {
+    "src": "12.jpg",
+    "tags": ["Ghandruk", "Trekking"],
+    "size": 2
+  },
+  {
+    "src": "20.jpg",
+    "tags": ["Panchase", "Trekking"],
+    "size": 2
+  },
+  {
     "src": "8.jpg",
-    "tags": ["trekking", "Ghandruk"],
+    "tags": ["Trekking", "Ghandruk"],
     "size": 6
   },
   {
@@ -50,24 +50,29 @@
     "size": 4
   },
   {
+    "src": "10.jpg",
+    "tags": ["Hiking", "Champadevi"],
+    "size": 4
+  },
+  {
     "src": "11.jpg",
     "tags": ["Tihar"],
     "size": 2
   },
   {
-    "src": "10.jpg",
-    "tags": ["hiking", "Champadevi"],
+    "src": "13.jpg",
+    "tags": ["Ghandruk", "Trekking"],
     "size": 4
   },
   {
-    "src": "12.jpg",
-    "tags": ["ghandruk", "trekking"],
+    "src": "7.jpg",
+    "tags": ["IPhO", "Physics"],
     "size": 2
   },
   {
-    "src": "13.jpg",
-    "tags": ["ghandruk", "trekking"],
-    "size": 4
+    "src": "21.jpg",
+    "tags": ["Phulchowki", "Hiking"],
+    "size": 6
   },
   {
     "src": "16.jpg",
@@ -75,9 +80,19 @@
     "size": 4
   },
   {
-    "src": "17.jpg",
-    "tags": ["Dashain", "family"],
+    "src": "3.jpg",
+    "tags": ["Hiking", "pilot baba"],
+    "size": 4
+  },
+  {
+    "src": "15.jpg",
+    "tags": ["Swayambhu"],
     "size": 2
+  },
+  {
+    "src": "18.jpg",
+    "tags": ["Olympiad", "Physics"],
+    "size": 4
   },
   {
     "src": "14.jpg",
@@ -85,8 +100,8 @@
     "size": 6
   },
   {
-    "src": "18.jpg",
-    "tags": ["Olympiad", "Physics"],
+    "src": "19.jpg",
+    "tags": ["Oya", "futsal"],
     "size": 4
   }
 ]

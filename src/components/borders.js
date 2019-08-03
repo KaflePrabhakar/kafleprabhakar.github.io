@@ -23,19 +23,34 @@ const BorderSVG = ({ contentWidth, contentHeight }) => {
       height={h + "px"}
       viewBox={`0 0 ${w} ${h}`}
     >
+      <defs>
+        <filter id="shadow-top" x="0" y="0" width="200%" height="200%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation={xLength / 10} />
+          <feOffset dx={xLength / 10} dy={yLength / 10} />
+          <feMerge>
+            <feMergeNode />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
       <polyline
         fill="none"
         stroke="rgba(255,193,7,0.9)"
         vectorEffect="non-scaling-stroke"
         strokeWidth={stk}
         points={`${xLength},0, 0,0 0,${yLength}`}
+        filter="url(#shadow-top)"
       />
       <polyline
         fill="none"
         stroke="rgba(255,193,7,0.9)"
         vectorEffect="non-scaling-stroke"
         strokeWidth={stk}
-        points={`${w - xLength},${h}, ${w},${h} ${w},${h - yLength}`}
+        points={`${w - xLength},${h}, ${w - xLength},${h - yLength} ${w},${h -
+          yLength}`}
+        filter="url(#shadow-top)"
+        transform={`scale(-1 -1) translate(${-2 * w + xLength} ${-2 * h +
+          yLength})`}
       />
     </svg>
   )
