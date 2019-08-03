@@ -19,14 +19,11 @@ const Header = () => (
       }
     `}
     render={data => (
-      <header
-        id="site-header"
-        style={{ height: window.innerWidth > 500 ? "80px" : "70px" }}
-      >
+      <header id="site-header" style="80px">
         <div className="header-container">
           <div className="site-logo">
             <Link to="/">
-              <Logo size={window.innerWidth > 500 ? "60px" : "50px"} />
+              <Logo size="60px" />
             </Link>
           </div>
           <Menu links={data.site.siteMetadata.menuLinks} />
