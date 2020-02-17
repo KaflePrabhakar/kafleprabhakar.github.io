@@ -1,107 +1,208 @@
 [
   {
     "src": "1.jpg",
-    "tags": ["ID"],
+    "tags": [
+      "2.00b",
+      "MIT"
+    ],
     "size": 2
   },
   {
     "src": "17.jpg",
-    "tags": ["Dashain", "family"],
+    "tags": [
+      "Dashain",
+      "family"
+    ],
     "size": 2
   },
   {
     "src": "5.jpg",
-    "tags": ["Trekking", "Ghandruk"],
+    "tags": [
+      "Trekking",
+      "Ghandruk"
+    ],
     "size": 6
   },
   {
-    "src": "2.jpg",
-    "tags": ["Tihar", "family"],
+    "src": "25.jpg",
+    "tags": [
+      "Snow",
+      "MIT"
+    ],
     "size": 4
   },
   {
     "src": "6.jpg",
-    "tags": ["travel", "Dolalghat"],
+    "tags": [
+      "travel",
+      "Dolalghat"
+    ],
     "size": 4
   },
   {
     "src": "4.jpg",
-    "tags": ["Hiking", "pilot baba"],
+    "tags": [
+      "Boston",
+      "MIT"
+    ],
     "size": 2
   },
   {
     "src": "12.jpg",
-    "tags": ["Ghandruk", "Trekking"],
+    "tags": [
+      "Ghandruk",
+      "Trekking"
+    ],
     "size": 2
   },
   {
-    "src": "20.jpg",
-    "tags": ["Panchase", "Trekking"],
+    "src": "24.jpg",
+    "tags": [
+      "Christmas",
+      "NC"
+    ],
     "size": 2
   },
   {
     "src": "8.jpg",
-    "tags": ["Trekking", "Ghandruk"],
+    "tags": [
+      "Trekking",
+      "Ghandruk"
+    ],
     "size": 6
   },
   {
     "src": "9.jpg",
-    "tags": ["travel", "Devghat", "Physics"],
+    "tags": [
+      "travel",
+      "Devghat",
+      "Physics"
+    ],
     "size": 4
   },
   {
-    "src": "10.jpg",
-    "tags": ["Hiking", "Champadevi"],
+    "src": "21.jpg",
+    "tags": [
+      "Phulchowki",
+      "Hiking"
+    ],
     "size": 4
   },
   {
     "src": "11.jpg",
-    "tags": ["Tihar"],
+    "tags": [
+      "Tihar"
+    ],
     "size": 2
   },
   {
     "src": "13.jpg",
-    "tags": ["Ghandruk", "Trekking"],
+    "tags": [
+      "Ghandruk",
+      "Trekking"
+    ],
     "size": 4
   },
   {
     "src": "7.jpg",
-    "tags": ["IPhO", "Physics"],
+    "tags": [
+      "IPhO",
+      "Physics"
+    ],
     "size": 2
   },
   {
-    "src": "21.jpg",
-    "tags": ["Phulchowki", "Hiking"],
+    "src": "22.jpg",
+    "tags": [
+      "Christmas",
+      "NC"
+    ],
     "size": 6
   },
   {
     "src": "16.jpg",
-    "tags": ["Holi"],
+    "tags": [
+      "Holi"
+    ],
     "size": 4
   },
   {
     "src": "3.jpg",
-    "tags": ["Hiking", "pilot baba"],
+    "tags": [
+      "Hiking",
+      "pilot baba"
+    ],
     "size": 4
   },
   {
     "src": "15.jpg",
-    "tags": ["Swayambhu"],
+    "tags": [
+      "Swayambhu"
+    ],
     "size": 2
   },
   {
-    "src": "18.jpg",
-    "tags": ["Olympiad", "Physics"],
+    "src": "23.jpg",
+    "tags": [
+      "DC",
+      "Washington Monument"
+    ],
     "size": 4
   },
   {
     "src": "14.jpg",
-    "tags": ["Pokhara", "travel"],
+    "tags": [
+      "Pokhara",
+      "travel"
+    ],
     "size": 6
   },
   {
     "src": "19.jpg",
-    "tags": ["Oya", "futsal"],
+    "tags": [
+      "Oya",
+      "futsal"
+    ],
     "size": 4
+  },
+  {
+    "src": "20.jpg",
+    "tags": [
+      "Panchase",
+      "Trekking"
+    ],
+    "size": 2
+  },
+  {
+    "src": "2.jpg",
+    "tags": [
+      "Tihar",
+      "family"
+    ],
+    "size": 4
+  },
+  {
+    "src": "18.jpg",
+    "tags": [
+      "Olympiad",
+      "Physics"
+    ],
+    "size": 4
+  },
+  {
+    "src": "10.jpg",
+    "tags": [
+      "Hiking",
+      "Champadevi"
+    ],
+    "size": 2
+  },
+  {
+    "src": "26.jpg",
+    "tags": [
+      "Hiking",
+      "Pilot Baba"
+    ],
+    "size": 2
   }
 ]

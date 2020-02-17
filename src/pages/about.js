@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
   const particle = {
     particles: {
       number: {
-        value: 40,
+        value: 30,
         density: {
           enable: true,
           value_area: 800,
@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
         value: 0.2,
         random: true,
         anim: {
-          enable: true,
+          enable: false,
           speed: 0.5,
           opacity_min: 0.19,
           sync: true,
@@ -58,13 +58,13 @@ const IndexPage = ({ data }) => {
         ],
       },
       color: {
-        value: "#CCC",
+        value: "#fff",
       },
       size: {
         value: 30,
         random: true,
         anim: {
-          enable: true,
+          enable: false,
           speed: 4,
           size_min: 15,
           sync: false,
@@ -77,9 +77,9 @@ const IndexPage = ({ data }) => {
         random: false,
         straight: false,
         out_mode: "out",
-        bounce: true,
+        bounce: false,
         attract: {
-          enable: true,
+          enable: false,
           rotateX: 600,
           rotateY: 1200,
         },
@@ -90,7 +90,7 @@ const IndexPage = ({ data }) => {
       events: {
         onclick: {
           enable: true,
-          mode: "push",
+          mode: "repulse",
         },
         resize: true,
       },
@@ -179,12 +179,12 @@ const IndexPage = ({ data }) => {
           <div className="skills-list progress-bar-container">
             <Bar
               title="Front End Web Development"
-              subtitle="HTML, CSS, Javascript, Jquery, React"
+              subtitle="HTML, CSS, Javascript, Jquery, React, Vue.js"
               length="75"
             />
             <Bar
               title="Back End Web Development"
-              subtitle="PHP, MySQL, Wordpress, Django"
+              subtitle="PHP, MySQL, Wordpress, Flask"
               length="50"
             />
             <Bar
@@ -192,7 +192,7 @@ const IndexPage = ({ data }) => {
               subtitle="Adobe Photoshop, Adobe Illustrator"
               length="80"
             />
-            <Bar title="Programming" subtitle="C, Python" length="40" />
+            <Bar title="Programming" subtitle="Python" length="40" />
           </div>
         </div>
       </section>

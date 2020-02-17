@@ -80,13 +80,9 @@ const IndexPage = () => {
     interactivity: {
       detect_on: "window",
       events: {
-        onhover: {
-          enable: true,
-          mode: "repulse",
-        },
         onclick: {
           enable: true,
-          mode: "push",
+          mode: "repulse",
         },
         resize: true,
       },
@@ -119,7 +115,7 @@ const IndexPage = () => {
     retina_detect: true,
   }
   return (
-    <Layout isCustom="custom-design">
+    <Layout isCustom="custom-design home-page">
       <SEO
         title="Home"
         keywords={[
@@ -132,7 +128,7 @@ const IndexPage = () => {
           `Portfolio`,
         ]}
       />
-      <Particles style={{ position: "absolute" }} params={particle} />
+      <Particles className="particles" params={particle} />
       <section className="front-page">
         <div className="page-body custom-bordered">
           <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -151,7 +147,7 @@ const IndexPage = () => {
               text={["Laconic", "Web Designer", "Graphics Designer"]}
             />
           </h3>
-          <h3>Kathmandu, Nepal</h3>
+          <h3>Cambridge, Massachusetts</h3>
           <Social call="home-page-social" />
           <Border stretch={true} />
         </div>

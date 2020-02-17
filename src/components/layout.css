@@ -657,10 +657,10 @@ body {
 }
 
 #___gatsby {
-  color: #eee;
+  color: #fff;
 }
 a {
-  color: #eee;
+  color: #fff;
 }
 .custom-bordered {
   position: relative;
@@ -679,7 +679,7 @@ div.body-overlay {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: rgba(51, 59, 80, 0.75);
+  background: rgba(51, 59, 80, 0.85);
 }
 header#site-header {
   position: absolute;
@@ -877,13 +877,18 @@ footer .footer-text span {
   display: inline-block;
 }
 
-main {
+main #content {
+  min-height: calc(var(--vh, 1vh) * 100 - 130px);
   position: relative;
-  height: 100%;
   padding: 50px 0;
 }
 main #content:not(.custom-design) {
   margin: 30px 0;
+}
+main #content.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .section {
   margin-bottom: 30px;
@@ -915,6 +920,13 @@ main .front-page {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home-page .particles {
+  position: absolute;
+  top:0;
+  left:0;
+  bottom: 0;
+  right: 0;
 }
 main .front-page .page-body {
   display: inline-flex;

@@ -14,6 +14,12 @@ import Header from "./header"
 import "./layout.css"
 import Footer from "./footer"
 
+const getViewportHeight = ()=>{
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+getViewportHeight();
+window.addEventListener('resize',getViewportHeight())
 const Layout = ({ children, isCustom }) => (
   <StaticQuery
     query={graphql`
@@ -27,7 +33,8 @@ const Layout = ({ children, isCustom }) => (
         }
       }
     `}
-    render={data => (
+    render={
+      data => (
       <>
         <BackgroundImage
           Tag="div"
@@ -37,7 +44,7 @@ const Layout = ({ children, isCustom }) => (
           style={{
             paddingTop: "80px",
             paddingBottom: "50px",
-            minHeight: "100vh",
+            minHeight: "calc(var(--vh, 1vh) * 100)",
           }}
         >
           <div className="body-overlay" />
