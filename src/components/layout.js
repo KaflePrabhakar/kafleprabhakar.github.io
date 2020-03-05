@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import Header from "./header"
-import "./layout.css"
+import './layout.css'
 import Footer from "./footer"
 
 

@@ -62,6 +62,7 @@ class Menu extends React.Component {
         <div
           className={`nav-dropdown ${this.state.displayMenu ? "open" : ""}`}
           onClick={this.showDropdownMenu}
+          onKeyDown={this.showDropdownMenu}
         >
           <span className="menu-hamburger" />
         </div>

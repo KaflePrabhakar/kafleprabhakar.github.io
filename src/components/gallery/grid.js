@@ -133,6 +133,7 @@ class MasonryGrid extends React.Component {
           key={key}
           filterTag={this.filterTag}
           onImgClick={this.openModal}
+          onKeyDown={this.openModal}
         />
       )
     })
@@ -157,9 +158,9 @@ class MasonryGrid extends React.Component {
       var active = key === this.state.key ? " active-tag" : ""
       return (
         <li className={`single-tag` + active} key={key}>
-          <button onClick={() => this.filterTag(element, key)}>
+          <button onClick={() => this.filterTag(element, key)} onKeyDown={() => this.filterTag(element, key)}>
             {element}
-            <span className="tag-unfilter" onClick={e => this.removeFilter(e)}>
+            <span className="tag-unfilter" onClick={e => this.removeFilter(e)} onKeyDown={e => this.removeFilter(e)}>
               <FontAwesomeIcon icon={faTimes} />
             </span>
           </button>
@@ -178,6 +179,7 @@ class MasonryGrid extends React.Component {
               <li
                 className={`single-tag remove-filter` + removeActive}
                 onClick={() => this.filterTag("", -1)}
+                onKeyDown={() => this.filterTag("", -1)}
               >
                 <button>Show All</button>
               </li>
@@ -236,7 +238,7 @@ class MasonryGrid extends React.Component {
             </div>
             <div className="modal-zoom">
               <div>
-                <span onClick={() => this.onSlideZoom(1)}>1x</span>
+                <span onClick={() => this.onSlideZoom(1)} onKeyDown={() => this.onSlideZoom(1)}>1x</span>
                 <div className="modal-slider">
                   <Slider
                     min={1}
@@ -259,17 +261,18 @@ class MasonryGrid extends React.Component {
                     }
                   />
                 </div>
-                <span onClick={() => this.onSlideZoom(2)}>2x</span>
+                <span onClick={() => this.onSlideZoom(2)} onKeyDown={() => this.onSlideZoom(2)}>2x</span>
               </div>
             </div>
             <div
               className="modal-zoom-label"
               style={{ display: this.state.zooming ? "block" : "none" }}
               onClick={() => this.setState({ zooming: false })}
+              onKeyDown={() => this.setState({ zooming: false })}
             >
               <span>{`${Math.round(this.state.modalZoom * 100)}%`}</span>
             </div>
-            <div className="modal-close" onClick={this.closeModal}>
+            <div className="modal-close" onClick={this.closeModal} onKeyDown={this.closeModal}>
               <FontAwesomeIcon icon={faTimes} />
             </div>
           </div>

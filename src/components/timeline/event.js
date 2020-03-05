@@ -1,6 +1,6 @@
 import React from "react"
 
-const Timeline = ({ children, time, title }) => (
+const Event = ({ children, time, title }) => (
   <div className="event-container">
     <div className="event">
       <div className="event-time">
@@ -12,4 +12,4 @@ const Timeline = ({ children, time, title }) => (
   </div>
 )
 
-export default Timeline
+export default Event

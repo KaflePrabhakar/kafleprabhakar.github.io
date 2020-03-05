@@ -16,7 +16,7 @@ class MasonryItem extends React.Component {
 
     const tags = attr.node.tags.map((tag, key) => {
       return (
-        <span className="item-tag" key={key} onClick={() => filterTag(tag)}>
+        <span className="item-tag" key={key} onClick={() => filterTag(tag)} onKeyDown={() => filterTag(tag)}>
           #{tag}
         </span>
       )
@@ -50,7 +50,7 @@ class MasonryItem extends React.Component {
         style={{ display: this.state.display }}
       >
         <div className="masonry-item-container">
-          <span onClick={() => onImgClick(image)}>
+          <span onClick={() => onImgClick(image)} onKeyDown={() => onImgClick(image)}>
             <Img fluid={image} className="item-image" />
           </span>
           <div className="item-details">
