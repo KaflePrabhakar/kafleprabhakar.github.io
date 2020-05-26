@@ -11,21 +11,20 @@ import { StaticQuery, graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 
 import Header from "./header"
-import './layout.css'
+import "./layout.css"
 import Footer from "./footer"
-
 
 class Layout extends React.Component {
   getViewportHeight = () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty("--vh", `${vh}px`)
   }
   componentDidMount() {
-    this.getViewportHeight();
-    window.addEventListener('resize',this.getViewportHeight())
+    this.getViewportHeight()
+    window.addEventListener("resize", this.getViewportHeight())
   }
   render = () => {
-    var {isCustom, children} = this.props
+    var { isCustom, children } = this.props
     return (
       <StaticQuery
         query={graphql`
@@ -39,8 +38,7 @@ class Layout extends React.Component {
             }
           }
         `}
-        render={
-          data => (
+        render={data => (
           <>
             <BackgroundImage
               Tag="div"
@@ -51,6 +49,7 @@ class Layout extends React.Component {
                 paddingTop: "80px",
                 paddingBottom: "50px",
                 minHeight: "calc(var(--vh, 1vh) * 100)",
+                overflow: "unset",
               }}
             >
               <div className="body-overlay" />
@@ -65,7 +64,6 @@ class Layout extends React.Component {
           </>
         )}
       />
-
     )
   }
 }

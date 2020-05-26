@@ -25,6 +25,10 @@ module.exports = {
         link: "https://www.linkedin.com/in/prabhakarkafle/",
       },
       {
+        name: "Github",
+        link: "https://github.com/kafleprabhakar/",
+      },
+      {
         name: "Facebook",
         link: "https://www.facebook.com/kafleprabhakar",
       },
@@ -36,11 +40,8 @@ module.exports = {
         name: "Instagram",
         link: "https://www.instagram.com/prabhakarkafle/",
       },
-      {
-        name: "Email",
-        link: "mailto:pkafleprabhakar@gmail.com",
-      },
     ],
+    siteUrl: `https://prabhakarkafle.com.np`,
     description: `This is a personal portfolio website of Prabhakar Kafle.`,
     author: `@Prabhakar`,
     image: `/images/og image.jpg`,
@@ -56,8 +57,33 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blogs`,
+        path: `${__dirname}/content/blogs`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    // `gatsby-remark-images`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -75,6 +101,19 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `pkafle`,
+      },
+    },
+    {
+      resolve: "gatsby-remark-external-links",
+      options: {
+        target: "_blank",
+        rel: "nofollow",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

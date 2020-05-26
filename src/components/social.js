@@ -7,6 +7,7 @@ import {
   faInstagram,
   faFacebookSquare,
   faTwitterSquare,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
@@ -15,7 +16,7 @@ library.add(
   faTwitterSquare,
   faLinkedin,
   faInstagram,
-  faEnvelope
+  faGithub
 )
 
 const Social = ({ call }) => (
@@ -48,8 +49,8 @@ const Social = ({ call }) => (
           case "LinkedIn":
             icon = faLinkedin
             break
-          case "Email":
-            icon = faEnvelope
+          case "Github":
+            icon = faGithub
             break
           default:
             icon = ""

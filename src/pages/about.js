@@ -1,8 +1,8 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Timeline, Event } from "../components/timeline"
 import Bar from "../components/bar"
 import Hobby from "../components/hobby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Border from "../components/measure"
