@@ -26,7 +26,7 @@
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.0.36",
     "gatsby-transformer-json": "^2.1.11",
-    "gatsby-transformer-remark": "^2.8.13",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.14",
     "gatsby-transformer-sqip": "^2.1.64",
     "prop-types": "^15.7.2",
